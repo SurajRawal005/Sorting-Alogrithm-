@@ -1,0 +1,117 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    color: #000;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* 🔥 Sorting Visualizer Title */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #007bff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode h1 {
+    background: linear-gradient(45deg, #00ffff, #ff6600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 🎯 Bar Container */
+.bar-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 80%;
+    max-width: 900px;
+    height: 350px;
+    margin: 20px auto;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .bar-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Individual Bars */
+.bar {
+    display: inline-block;
+    width: 25px;
+    margin: 3px;
+    background: linear-gradient(180deg, #007bff, #0056b3);
+    border-radius: 5px;
+    transition: height 0.3s, background-color 0.3s;
+}
+
+/* 🔥 Buttons */
+button {
+    font-size: 1rem;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s, background-color 0.3s;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Dark Mode Toggle */
+#dark-mode-btn {
+    background-color: #ff5722;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#dark-mode-btn:hover {
+    background-color: #e64a19;
+}
+
+/* Dropdown */
+select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.dark-mode select {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
